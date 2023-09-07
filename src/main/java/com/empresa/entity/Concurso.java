@@ -30,5 +30,5 @@ public class Concurso {
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Temporal(TemporalType.DATE)
 	private String fechaFin;
-	private int estado = 1;
+	private String estado = "Activo";
 }
