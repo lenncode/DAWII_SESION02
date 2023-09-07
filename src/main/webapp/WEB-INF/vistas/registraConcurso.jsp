@@ -8,6 +8,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrapValidator.js"></script>
 <script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/redireccionar.js"></script>
 
 <link rel="stylesheet" href="css/bootstrap.css" />
 <link rel="stylesheet" href="css/bootstrapValidator.css" />
@@ -61,9 +62,26 @@
 			<div class="col-md-12" style="margin-bottom: 4rem;" align="center">
 				<button id="id_registrar" type="submit"
 					class="btn btn-primary btn-lg">Registrar</button>
+							
 			</div>
+		
 		</form>
+		<div class="col-md-12" align="center">
+			<div class="col-md-4 form-group">
+				<button id="id_MedicamentoBootstrap5" type="button"
+					class="btn btn-success btn-lg">Bootstrap5</button>
+			</div>
+			<div class="col-md-4 form-group">
+				<button id="id_verMedicamento" type="button"
+					class="btn btn-success btn-lg">Medicamento</button>
+			</div>
+			<div class="col-md-4 form-group">
+				<button id="id_verConcurso" type="button"
+					class="btn btn-success btn-lg">Concurso</button>
+			</div>
+		</div>
 	</div>
+	
 
 	<script type="text/javascript">
 		$("#id_registrar").click(function() {

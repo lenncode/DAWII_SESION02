@@ -8,6 +8,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrapValidator.js"></script>
 <script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/redireccionar.js"></script>
 
 <link rel="stylesheet" href="css/bootstrap.css" />
 <link rel="stylesheet" href="css/bootstrapValidator.css" />
@@ -74,11 +75,24 @@
 			<div class="col-md-12" style="margin-bottom: 4rem;" align="center">
 				<button id="id_registrar" type="submit"
 					class="btn btn-primary btn-lg">Registrar</button>
-				<button id="id_clean" type="button"
-					class="btn btn-warning btn-lg">Clean</button>
-				<a href="/verMedicamentoBootstrap5">Bootstrap5</a>
+				<button id="id_clean" type="button" class="btn btn-warning btn-lg">Clean</button>
+
 			</div>
 		</form>
+		<div class="col-md-12" align="center">
+			<div class="col-md-4 form-group">
+				<button id="id_MedicamentoBootstrap5" type="button"
+					class="btn btn-success btn-lg">Bootstrap5</button>
+			</div>
+			<div class="col-md-4 form-group">
+				<button id="id_verMedicamento" type="button"
+					class="btn btn-success btn-lg">Medicamento</button>
+			</div>
+			<div class="col-md-4 form-group">
+				<button id="id_verConcurso" type="button"
+					class="btn btn-success btn-lg">Concurso</button>
+			</div>
+		</div>
 	</div>
 
 	<script type="text/javascript">
@@ -105,15 +119,11 @@
 				});
 			}
 		});
-		$("#id_bootstrap5").click(function() {
-			
-			
-		});
 
 		$("#id_clean").click(function() {
 			limpiar();
 		});
-		
+
 		function limpiar() {
 			$('#id_nombre').val('');
 			$('#id_precio').val('');
@@ -150,7 +160,7 @@
 								message : 'El campo es obligatorio'
 							},
 							regexp : {
-								regexp :  /^[0-9]+$/,
+								regexp : /^[0-9]+$/,
 								message : 'Solo números enteros'
 							},
 							stringLength : {
@@ -167,7 +177,7 @@
 								message : 'El campo es obligatorio'
 							},
 							regexp : {
-								regexp :  /^[0-9]+$/,
+								regexp : /^[0-9]+$/,
 								message : 'Solo números enteros'
 							},
 							stringLength : {

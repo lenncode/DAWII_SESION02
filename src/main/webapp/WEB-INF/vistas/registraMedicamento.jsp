@@ -6,6 +6,7 @@
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/redireccionar.js"></script>
 <!-- Bootstrap CSS -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -22,11 +23,12 @@ label {
 	font-size: 1.5em;
 }
 
-.container {
+#id_form {
 	background: #f0f0f0;
 	border-radius: 20px;
 	align-items: center;
-	margin-top: 3.10em;
+	margin: 1.10em;
+	padding: 0.05em 2.1em;
 	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px
 		2px;
 }
@@ -111,6 +113,21 @@ label {
 					class="btn btn-primary btn-lg">Registrar</button>
 			</div>
 		</form>
+		<div class="row g-3" >
+				<div class="form-group  col-md-12 position-relative">
+				<div class="col-md-4 ">
+					<button id="id_MedicamentoBootstrap5" type="button"
+						class="btn btn-success ">Bootstrap5</button>
+				</div>
+				<div class="col-sm-4 ">
+					<button id="id_verMedicamento" type="button"
+						class="btn btn-success ">Medicamento</button>
+				</div>
+				<div class="col-sm-4 ">
+					<button id="id_verConcurso" type="button" class="btn btn-success ">Concurso</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script type="text/javascript">
